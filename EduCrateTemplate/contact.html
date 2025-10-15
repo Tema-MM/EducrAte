@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Hoërskool Noordheuwel</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header/Nav -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="School Logo">
+      <span>EduCrate</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="academics.html">Academics</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="admin-login.html" class="btn outline">Login</a>
+      <a href="student-login.html" class="btn filled">Find My Student</a>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="hero contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>Get in touch with Hoërskool Noordheuwel</p>
+    </div>
+  </section>
+
+  <!-- Contact Main -->
+  <section class="mission">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <!-- Contact Form -->
+        <div>
+          <h2>Send us a Message</h2>
+          <form style="margin-top: 2rem;">
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name</label>
+              <input type="text" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address</label>
+              <input type="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number</label>
+              <input type="tel" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject</label>
+              <select required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="admissions">Admissions</option>
+                <option value="academic">Academic Questions</option>
+                <option value="sports">Sports Information</option>
+                <option value="events">Events</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
+              <textarea required rows="6" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; resize: vertical;"></textarea>
+            </div>
+            
+            <button type="submit" class="btn filled">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h2>Get in Touch</h2>
+          
+          <div class="news-cards" style="margin-top: 2rem;">
+            <div class="card">
+              <h3>Address</h3>
+              <p>123 Education Street<br>
+              Noordheuwel, 1739<br>
+              South Africa</p>
+            </div>
+            
+            <div class="card">
+              <h3>Phone</h3>
+              <p>+27 11 555 1234<br>
+              +27 11 555 5678 (Fax)</p>
+            </div>
+            
+            <div class="card">
+              <h3>Email</h3>
+              <p>info@noordheuwel.co.za<br>
+              admissions@noordheuwel.co.za</p>
+            </div>
+            
+            <div class="card">
+              <h3>Office Hours</h3>
+              <p>Monday - Friday: 7:30 AM - 4:00 PM<br>
+              Saturday: 8:00 AM - 12:00 PM<br>
+              Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Department Contacts -->
+  <section class="news-preview">
+    <div class="container">
+      <h2>Department Contacts</h2>
+      <div class="news-cards">
+        <div class="card">
+          <h3>Admissions</h3>
+          <p><strong>Mrs. Anna van der Walt</strong></p>
+          <p>admissions@noordheuwel.co.za</p>
+          <p>+27 11 555 1235</p>
+        </div>
+        
+        <div class="card">
+          <h3>Academic Affairs</h3>
+          <p><strong>Ms. Elsie Botha</strong></p>
+          <p>academic@noordheuwel.co.za</p>
+          <p>+27 11 555 1236</p>
+        </div>
+        
+        <div class="card">
+          <h3>Sports & Activities</h3>
+          <p><strong>Mr. Pieter Jacobs</strong></p>
+          <p>sports@noordheuwel.co.za</p>
+          <p>+27 11 555 1237</p>
+        </div>
+        
+        <div class="card">
+          <h3>Finance</h3>
+          <p><strong>Mrs. Maria Smit</strong></p>
+          <p>finance@noordheuwel.co.za</p>
+          <p>+27 11 555 1238</p>
+        </div>
+        
+        <div class="card">
+          <h3>Student Support</h3>
+          <p><strong>Ms. Naomi du Plessis</strong></p>
+          <p>support@noordheuwel.co.za</p>
+          <p>+27 11 555 1239</p>
+        </div>
+        
+        <div class="card">
+          <h3>IT Support</h3>
+          <p><strong>Mr. Hendrik Kruger</strong></p>
+          <p>it@noordheuwel.co.za</p>
+          <p>+27 11 555 1240</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+    </div>
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

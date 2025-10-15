@@ -1,0 +1,152 @@
+ /* Base & fonts */
+body, html {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background: #000;
+  color: #fff;
+}
+
+/* Hero background */
+.login-hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/Logo.jpg'); /* Make sure this path is correct */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Login container/card */
+.login-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.login-container h1 {
+  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFCC00; /* Noordheuwel yellow */
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #f0f0f0cc;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  box-shadow: 0 0 8px #FFCC00;
+}
+
+/* Button */
+.btn.filled {
+  background-color: #003A70; /* Noordheuwel navy */
+  color: white;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn.filled:hover {
+  background-color: #002856;
+}
+
+/* Back link */
+.back-link {
+  margin-top: 20px;
+  color: #f0f0f0cc;
+  font-weight: 500;
+}
+
+.back-link a {
+  color: #FFCC00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Account toggle */
+.account-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.account-toggle .tab {
+  border: 1px solid rgba(255,255,255,0.6);
+  background: transparent;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.account-toggle .tab:hover { background: rgba(255,255,255,0.12); }
+.account-toggle .tab.active,
+.account-toggle .tab[aria-current="page"] {
+  background: #FFCC00;
+  color: #003A70;
+  border-color: #FFCC00;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+
+  .login-container h1 {
+    font-size: 2rem;
+  }
+}

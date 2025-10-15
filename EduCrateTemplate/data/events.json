@@ -1,0 +1,26 @@
+[
+  {
+    "id": 101,
+    "title": "Parent-Teacher Evening",
+    "start": "2025-10-15T17:00:00+02:00",
+    "end": "2025-10-15T20:00:00+02:00",
+    "location": "School Hall",
+    "url": "events.html#pte-2025-10"
+  },
+  {
+    "id": 102,
+    "title": "Grade 12 Final Exams Begin",
+    "start": "2025-11-01T08:00:00+02:00",
+    "end": "2025-11-30T17:00:00+02:00",
+    "location": "Campus-wide",
+    "url": "events.html#gr12-finals-2025"
+  },
+  {
+    "id": 103,
+    "title": "Summer Sports Day",
+    "start": "2025-12-05T09:00:00+02:00",
+    "end": "2025-12-05T15:00:00+02:00",
+    "location": "Athletics Field",
+    "url": "events.html#sports-day-2025"
+  }
+]

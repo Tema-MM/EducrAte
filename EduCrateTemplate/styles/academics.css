@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #003A70;
+  color: white;
+  z-index: 999;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #FFCC00;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+  color: #fff;
+}
+
+.nav-links a:hover {
+  color: #FFCC00;
+}
+
+.academics-main {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.academics-header h1 {
+  font-size: 2.5rem;
+  color: #003A70;
+  margin-bottom: 0.5rem;
+}
+
+.academics-header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.subjects-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.subject-card {
+  border: 2px solid #003A70;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.subject-card h2 {
+  color: #003A70;
+  margin-bottom: 0.5rem;
+}
+
+.toggle-btn {
+  background-color: #FFCC00;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #e6b800;
+}
+
+.subject-details {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.footer {
+  padding: 1rem 2rem;
+  background-color: #003A70;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}

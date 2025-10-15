@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hoërskool Noordheuwel – Where Excellence Meets Education. Latest news, events, admissions, and academics." />
+  <title>EduCrate - Hoërskool Noordheuwel</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header/Nav -->
+  <header class="navbar" role="banner">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="School crest" loading="lazy">
+      <span>EduCrate</span>
+    </div>
+    <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav-links" id="primary-navigation" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="academics.html">Academics</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="admin-login.html" class="btn outline">Login</a>
+      <a href="student-login.html" class="btn filled">Find My Student</a>
+      <a href="student-application.html" class="btn outline" style="margin-left: 0.5rem;">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Featured highlights">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="hero-rotator" role="region" aria-live="polite">
+      <h1 id="hero-title">Welcome to Hoërskool Noordheuwel</h1>
+      <p id="hero-subtitle">Where Excellence Meets Education</p>
+      <div class="hero-buttons">
+        <a href="student-login.html" class="btn filled">Find My Student</a>
+        <a href="news.html" class="btn outline">Explore News</a>
+      </div>
+      <div class="hero-dots" role="tablist" aria-label="Hero slides"></div>
+    </div>
+  </section>
+
+  <main id="main" tabindex="-1">
+  <!-- About/Mission -->
+  <section class="mission">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p>Empowering students with purpose, pride, and excellence in all areas of life and learning.</p>
+      <div class="stats">
+        <div class="stat">
+          <h3>15+</h3>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat">
+          <h3>1,200+</h3>
+          <p>Students</p>
+        </div>
+        <div class="stat">
+          <h3>100%</h3>
+          <p>Matric Pass Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Preview -->
+  <section class="news-preview" aria-labelledby="latest-news-heading">
+    <div class="container">
+      <h2 id="latest-news-heading">Latest School News</h2>
+      <div class="news-cards" id="news-cards" data-count="3" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- Events Preview -->
+  <section class="events-preview" aria-labelledby="upcoming-events-heading">
+    <div class="container">
+      <h2 id="upcoming-events-heading">Upcoming Events</h2>
+      <ul class="events-list" id="events-list" aria-live="polite"></ul>
+      <div style="text-align:center;margin-top:1rem;">
+        <a href="events.html" class="btn outline">View Full Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <h2 id="newsletter-heading">Subscribe to our Newsletter</h2>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" aria-required="true" required>
+        <button type="submit" class="btn filled">Subscribe</button>
+        <p id="newsletter-feedback" role="status" aria-live="polite" class="form-feedback" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+    </div>
+  </footer>
+
+  <script src="scripts/hero.js" defer></script>
+  <script src="scripts/news.js" defer></script>
+  <script src="scripts/events.js" defer></script>
+  <script src="scripts/scripts.js" defer></script>
+</body>
+</html>

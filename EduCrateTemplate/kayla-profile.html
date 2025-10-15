@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kayla Arikanna - Student Profile | EduCrate</title>
+  <link rel="stylesheet" href="styles/kayla-profile.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="Hoërskool Noordheuwel Logo" />
+      <span>EduCrate</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="academics.html">Academics</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="kayla-portal.html" class="btn outline">Portal</a>
+      <a href="assignments.html" class="btn filled">Assignments</a>
+    </div>
+  </header>
+
+  <main class="profile-main">
+    <section class="profile-header">
+      <img src="images/kayla.jpg" alt="Kayla Arikanna" class="profile-pic" />
+      <div class="profile-info">
+        <h1>Kayla Arikanna</h1>
+        <p class="grade">Grade 10</p>
+        <p class="email">kayla@student.educrate.com</p>
+      </div>
+    </section>
+
+    <section class="profile-details">
+      <h2>Subjects</h2>
+      <ul class="subjects-list">
+        <li>Afrikaans</li>
+        <li>English</li>
+        <li>Mathematics</li>
+        <li>Life Sciences</li>
+        <li>History</li>
+        <li>Physical Education</li>
+      </ul>
+
+      <h2>Class Teacher</h2>
+      <div class="teacher-contact">
+        <p><strong>Mr. Johan van der Merwe</strong></p>
+        <p>Email: <a href="mailto:johan.vdmerwe@noordheuwel.co.za">johan.vdmerwe@noordheuwel.co.za</a></p>
+        <p>Phone: +27 11 555 1234</p>
+        <p class="teacher-note">
+          Kayla is a dedicated student showing steady progress in all her subjects. She actively participates in class and is encouraged to keep developing her leadership skills.
+        </p>
+      </div>
+
+      <h2>Academic Progress</h2>
+      <div class="progress-cards">
+        <div class="progress-card">
+          <h3>Mathematics</h3>
+          <p>Current Grade: 78%</p>
+          <p>Comments: Strong analytical skills; needs to practice problem-solving more.</p>
+        </div>
+        <div class="progress-card">
+          <h3>Afrikaans</h3>
+          <p>Current Grade: 85%</p>
+          <p>Comments: Excellent grasp of language and grammar.</p>
+        </div>
+        <div class="progress-card">
+          <h3>Life Sciences</h3>
+          <p>Current Grade: 80%</p>
+          <p>Comments: Shows great curiosity and understanding of biological concepts.</p>
+        </div>
+      </div>
+
+      <h2>Request a Meeting with Class Teacher</h2>
+      <form class="meeting-form" action="#" method="POST">
+        <label for="meeting-date">Preferred Meeting Date:</label>
+        <input type="date" id="meeting-date" name="meeting-date" required />
+
+        <label for="meeting-message">Message:</label>
+        <textarea id="meeting-message" name="meeting-message" rows="4" placeholder="Write a message for the teacher..." required></textarea>
+
+        <button type="submit" class="btn filled">Request Meeting</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+  </footer>
+
+  <script src="scripts/kayla-profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports | EduCrate Admin</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header/Nav -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="School Logo">
+      <span>EduCrate Admin</span>
+    </div>
+    <nav class="nav-links">
+      <a href="admin-dashboard.html">Dashboard</a>
+      <a href="admin-students.html">Students</a>
+      <a href="admin-applications.html">Applications</a>
+      <a href="admin-grades.html">Grades</a>
+      <a href="admin-reports.html" class="active">Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn outline" onclick="logout()">Logout</a>
+    </div>
+  </header>
+
+  <!-- Reports Main -->
+  <main style="padding: 2rem;">
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <h1>Reports & Analytics</h1>
+        <p>Generate reports and analyze school data</p>
+      </div>
+
+      <!-- Coming Soon -->
+      <section class="mission">
+        <div class="container">
+          <div style="text-align: center; padding: 4rem 2rem;">
+            <div style="font-size: 4rem; color: #003A70; margin-bottom: 2rem;">📈</div>
+            <h2>Reports & Analytics System</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">This feature is currently under development.</p>
+            <p>Here you will be able to:</p>
+            <div class="news-cards" style="margin-top: 2rem;">
+              <div class="card">
+                <h3>Academic Reports</h3>
+                <p>Generate comprehensive academic performance reports and analytics.</p>
+              </div>
+              <div class="card">
+                <h3>Enrollment Reports</h3>
+                <p>Track enrollment trends, demographics, and application statistics.</p>
+              </div>
+              <div class="card">
+                <h3>Custom Reports</h3>
+                <p>Create custom reports based on specific criteria and date ranges.</p>
+              </div>
+            </div>
+            <div style="margin-top: 2rem;">
+              <a href="admin-dashboard.html" class="btn filled">Return to Dashboard</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+    </div>
+  </footer>
+
+  <script>
+    function logout() {
+      localStorage.removeItem('adminLoggedIn');
+      localStorage.removeItem('adminUser');
+      window.location.href = 'admin-login.html';
+    }
+  </script>
+</body>
+</html>

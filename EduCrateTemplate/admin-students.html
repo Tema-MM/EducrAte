@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management | EduCrate Admin</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header/Nav -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="School Logo">
+      <span>EduCrate Admin</span>
+    </div>
+    <nav class="nav-links">
+      <a href="admin-dashboard.html">Dashboard</a>
+      <a href="admin-students.html" class="active">Students</a>
+      <a href="admin-applications.html">Applications</a>
+      <a href="admin-grades.html">Grades</a>
+      <a href="admin-reports.html">Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn outline" onclick="logout()">Logout</a>
+    </div>
+  </header>
+
+  <!-- Students Main -->
+  <main style="padding: 2rem;">
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <h1>Student Management</h1>
+        <p>Manage student records and information</p>
+      </div>
+
+      <!-- Coming Soon -->
+      <section class="mission">
+        <div class="container">
+          <div style="text-align: center; padding: 4rem 2rem;">
+            <div style="font-size: 4rem; color: #003A70; margin-bottom: 2rem;">👥</div>
+            <h2>Student Management System</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">This feature is currently under development.</p>
+            <p>Here you will be able to:</p>
+            <div class="news-cards" style="margin-top: 2rem;">
+              <div class="card">
+                <h3>View Student Records</h3>
+                <p>Access comprehensive student information and academic history.</p>
+              </div>
+              <div class="card">
+                <h3>Edit Student Details</h3>
+                <p>Update student information, contact details, and enrollment status.</p>
+              </div>
+              <div class="card">
+                <h3>Manage Enrollments</h3>
+                <p>Handle student admissions, transfers, and withdrawals.</p>
+              </div>
+            </div>
+            <div style="margin-top: 2rem;">
+              <a href="admin-dashboard.html" class="btn filled">Return to Dashboard</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+    </div>
+  </footer>
+
+  <script>
+    function logout() {
+      localStorage.removeItem('adminLoggedIn');
+      localStorage.removeItem('adminUser');
+      window.location.href = 'admin-login.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+ body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fbff;
+  color: #002147;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #002147;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  height: 42px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 600;
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: #FFCC00;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Portal Header */
+.portal-main {
+  max-width: 920px;
+  margin: 3rem auto 6rem;
+  padding: 0 1.5rem;
+}
+
+.portal-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #002147cc, #FFCC0055);
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFCC00;
+}
+
+/* Tabs */
+.portal-tabs {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #003A70;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #002856;
+}
+
+.tab-btn.active {
+  background-color: #FFCC00;
+  color: #002147;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Cards */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 1.5rem;
+  flex: 1 1 280px;
+  box-shadow: 0 6px 22px rgba(0,33,71,0.1);
+}
+
+/* Progress Bars */
+.progress-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+
+.progress-card {
+  flex: 1 1 300px;
+  background: white;
+  border-radius: 18px;
+  padding: 1.8rem 2.2rem;
+  box-shadow: 0 6px 22px rgba(0,33,71,0.1);
+}
+
+.progress-bar {
+  height: 14px;
+  background: #e5e9f1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #002147, #FFCC00);
+  width: 0%;
+  border-radius: 12px 0 0 12px;
+  transition: width 1.5s ease-in-out;
+}
+
+.progress-comments {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Syllabus List */
+.syllabus-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.syllabus-list li {
+  background: #FFCC00;
+  color: #002147;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-weight: 600;
+  background-color: #002147;
+  color: white;
+  margin-top: 5rem;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .portal-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 1rem;
+  }
+
+  .progress-cards, .card-list {
+    flex-direction: column;
+  }
+}

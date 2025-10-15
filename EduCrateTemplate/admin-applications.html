@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Applications | EduCrate Admin</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header/Nav -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="School Logo">
+      <span>EduCrate Admin</span>
+    </div>
+    <nav class="nav-links">
+      <a href="admin-dashboard.html">Dashboard</a>
+      <a href="admin-students.html">Students</a>
+      <a href="admin-applications.html" class="active">Applications</a>
+      <a href="admin-grades.html">Grades</a>
+      <a href="admin-reports.html">Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn outline" onclick="logout()">Logout</a>
+    </div>
+  </header>
+
+  <!-- Applications Main -->
+  <main style="padding: 2rem;">
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <h1>Student Applications</h1>
+        <p>Review and manage new student applications</p>
+      </div>
+
+      <!-- Filter and Search -->
+      <section class="news-preview">
+        <div class="container">
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 2rem; flex-wrap: wrap;">
+            <input type="text" id="searchApplications" placeholder="Search applications..." style="flex: 1; min-width: 200px; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            <select id="statusFilter" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+              <option value="">All Status</option>
+              <option value="pending">Pending</option>
+              <option value="approved">Approved</option>
+              <option value="rejected">Rejected</option>
+            </select>
+            <select id="gradeFilter" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+              <option value="">All Grades</option>
+              <option value="8">Grade 8</option>
+              <option value="9">Grade 9</option>
+              <option value="10">Grade 10</option>
+              <option value="11">Grade 11</option>
+              <option value="12">Grade 12</option>
+            </select>
+            <button class="btn filled" onclick="refreshApplications()">Refresh</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Applications List -->
+      <section class="mission">
+        <div class="container">
+          <h2>Applications</h2>
+          <div id="applicationsList">
+            <!-- Applications will be loaded here by JavaScript -->
+            <div class="news-cards">
+              <div class="card">
+                <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 1rem;">
+                  <h3>John Smith</h3>
+                  <span style="background: #ffc107; color: #333; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">PENDING</span>
+                </div>
+                <p><strong>Grade:</strong> 10</p>
+                <p><strong>Applied:</strong> 2 hours ago</p>
+                <p><strong>Parent:</strong> Mary Smith</p>
+                <p><strong>Email:</strong> mary.smith@email.com</p>
+                <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                  <button class="btn filled" onclick="viewApplication('APP-123')">View Details</button>
+                  <button class="btn outline" onclick="approveApplication('APP-123')">Approve</button>
+                  <button class="btn outline" onclick="rejectApplication('APP-123')" style="color: #dc3545; border-color: #dc3545;">Reject</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 1rem;">
+                  <h3>Sarah Johnson</h3>
+                  <span style="background: #28a745; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">APPROVED</span>
+                </div>
+                <p><strong>Grade:</strong> 9</p>
+                <p><strong>Applied:</strong> 1 day ago</p>
+                <p><strong>Parent:</strong> David Johnson</p>
+                <p><strong>Email:</strong> david.johnson@email.com</p>
+                <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                  <button class="btn filled" onclick="viewApplication('APP-124')">View Details</button>
+                  <button class="btn outline" onclick="sendAcceptanceLetter('APP-124')">Send Acceptance</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 1rem;">
+                  <h3>Michael Brown</h3>
+                  <span style="background: #dc3545; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">REJECTED</span>
+                </div>
+                <p><strong>Grade:</strong> 11</p>
+                <p><strong>Applied:</strong> 3 days ago</p>
+                <p><strong>Parent:</strong> Lisa Brown</p>
+                <p><strong>Email:</strong> lisa.brown@email.com</p>
+                <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                  <button class="btn filled" onclick="viewApplication('APP-125')">View Details</button>
+                  <button class="btn outline" onclick="sendRejectionLetter('APP-125')">Send Rejection</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+      <section class="news-preview">
+        <div class="container">
+          <h2>Application Statistics</h2>
+          <div class="news-cards">
+            <div class="card" style="text-align: center;">
+              <h3 id="totalApplications">15</h3>
+              <p>Total Applications</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <h3 id="pendingApplications">8</h3>
+              <p>Pending Review</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <h3 id="approvedApplications">5</h3>
+              <p>Approved</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <h3 id="rejectedApplications">2</h3>
+              <p>Rejected</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+    </div>
+  </footer>
+
+  <script src="scripts/admin-applications.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Term 3 Kicks Off",
+    "excerpt": "Students return with energy and purpose as the third term begins with exciting projects ahead.",
+    "date": "2025-07-15",
+    "category": "General",
+    "url": "news.html#term-3-kicks-off"
+  },
+  {
+    "id": 2,
+    "title": "Sporting Triumph",
+    "excerpt": "Our rugby team takes the trophy again — three years in a row! What a winning legacy.",
+    "date": "2025-06-28",
+    "category": "Sports",
+    "url": "news.html#sporting-triumph"
+  },
+  {
+    "id": 3,
+    "title": "Matric Camp Recap",
+    "excerpt": "A weekend of leadership, bonding, and reflection — see photos and quotes from students.",
+    "date": "2025-06-10",
+    "category": "Academics",
+    "url": "news.html#matric-camp-recap"
+  }
+]

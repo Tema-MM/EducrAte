@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | EduCrate</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header/Nav -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="School Logo">
+      <span>EduCrate Admin</span>
+    </div>
+    <nav class="nav-links">
+      <a href="admin-dashboard.html" class="active">Dashboard</a>
+      <a href="admin-students.html">Students</a>
+      <a href="admin-applications.html">Applications</a>
+      <a href="admin-grades.html">Grades</a>
+      <a href="admin-reports.html">Reports</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn outline" onclick="logout()">Logout</a>
+    </div>
+  </header>
+
+  <!-- Dashboard Main -->
+  <main style="padding: 2rem;">
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome back, Administrator</p>
+      </div>
+
+      <!-- Stats Overview -->
+      <section class="news-preview">
+        <div class="container">
+          <h2>School Overview</h2>
+          <div class="news-cards">
+            <div class="card" style="text-align: center;">
+              <div style="font-size: 2.5rem; color: #003A70; margin-bottom: 1rem;">🎓</div>
+              <h3>1,247</h3>
+              <p>Total Students</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <div style="font-size: 2.5rem; color: #FFCC00; margin-bottom: 1rem;">📝</div>
+              <h3>23</h3>
+              <p>Pending Applications</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <div style="font-size: 2.5rem; color: #003A70; margin-bottom: 1rem;">📊</div>
+              <h3>85.2%</h3>
+              <p>Average Grade</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <div style="font-size: 2.5rem; color: #FFCC00; margin-bottom: 1rem;">🏆</div>
+              <h3>100%</h3>
+              <p>Matric Pass Rate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Actions -->
+      <section class="mission">
+        <div class="container">
+          <h2>Quick Actions</h2>
+          <div class="news-cards">
+            <div class="card" style="text-align: center; cursor: pointer;" onclick="location.href='admin-applications.html'">
+              <div style="font-size: 2rem; color: #003A70; margin-bottom: 1rem;">📋</div>
+              <h3>View Applications</h3>
+              <p>Review and process new student applications</p>
+            </div>
+            <div class="card" style="text-align: center; cursor: pointer;" onclick="location.href='admin-students.html'">
+              <div style="font-size: 2rem; color: #FFCC00; margin-bottom: 1rem;">👥</div>
+              <h3>Manage Students</h3>
+              <p>View and manage student records</p>
+            </div>
+            <div class="card" style="text-align: center; cursor: pointer;" onclick="location.href='admin-grades.html'">
+              <div style="font-size: 2rem; color: #003A70; margin-bottom: 1rem;">📊</div>
+              <h3>Update Grades</h3>
+              <p>Enter and manage student grades</p>
+            </div>
+            <div class="card" style="text-align: center; cursor: pointer;" onclick="location.href='admin-reports.html'">
+              <div style="font-size: 2rem; color: #FFCC00; margin-bottom: 1rem;">📈</div>
+              <h3>Generate Reports</h3>
+              <p>Create academic and administrative reports</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Activity -->
+      <section class="news-preview">
+        <div class="container">
+          <h2>Recent Activity</h2>
+          <div class="news-cards">
+            <div class="card">
+              <h3>New Application</h3>
+              <p>John Smith applied for Grade 10</p>
+              <p style="color: #666; font-size: 0.9rem;">2 hours ago</p>
+            </div>
+            <div class="card">
+              <h3>Grade Updated</h3>
+              <p>Mathematics grades updated for Grade 12</p>
+              <p style="color: #666; font-size: 0.9rem;">4 hours ago</p>
+            </div>
+            <div class="card">
+              <h3>Student Registered</h3>
+              <p>Sarah Johnson successfully enrolled</p>
+              <p style="color: #666; font-size: 0.9rem;">1 day ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- System Status -->
+      <section class="mission">
+        <div class="container">
+          <h2>System Status</h2>
+          <div class="news-cards">
+            <div class="card" style="text-align: center;">
+              <div style="font-size: 1.5rem; color: #28a745; margin-bottom: 0.5rem;">✅</div>
+              <h3>System Online</h3>
+              <p>All systems operational</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <div style="font-size: 1.5rem; color: #28a745; margin-bottom: 0.5rem;">✅</div>
+              <h3>Database Connected</h3>
+              <p>Student records accessible</p>
+            </div>
+            <div class="card" style="text-align: center;">
+              <div style="font-size: 1.5rem; color: #ffc107; margin-bottom: 0.5rem;">⚠️</div>
+              <h3>Backup Pending</h3>
+              <p>Scheduled for tonight</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+    </div>
+  </footer>
+
+  <script src="scripts/admin-dashboard.js"></script>
+</body>
+</html>

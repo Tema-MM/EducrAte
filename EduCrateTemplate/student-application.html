@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Application | Hoërskool Noordheuwel</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header/Nav -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="School Logo">
+      <span>EduCrate</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="academics.html">Academics</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="admin-login.html" class="btn outline">Login</a>
+      <a href="student-login.html" class="btn filled">Find My Student</a>
+    </div>
+  </header>
+
+  <!-- Application Hero -->
+  <section class="hero application-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Apply to Hoërskool Noordheuwel</h1>
+      <p>Join our community of excellence and achievement</p>
+    </div>
+  </section>
+
+  <!-- Application Process Info -->
+  <section class="mission">
+    <div class="container">
+      <h2>Application Process</h2>
+      <p>Thank you for your interest in joining Hoërskool Noordheuwel. Please complete the application form below with accurate information. All fields marked with * are required.</p>
+      
+      <div class="stats">
+        <div class="stat">
+          <h3>1</h3>
+          <p>Complete Application</p>
+        </div>
+        <div class="stat">
+          <h3>2</h3>
+          <p>Submit Documents</p>
+        </div>
+        <div class="stat">
+          <h3>3</h3>
+          <p>Interview & Assessment</p>
+        </div>
+        <div class="stat">
+          <h3>4</h3>
+          <p>Acceptance Notification</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="news-preview">
+    <div class="container">
+      <form id="studentApplicationForm" style="max-width: 800px; margin: 0 auto;">
+        <!-- Student Information -->
+        <div style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+          <h3 style="color: #003A70; margin-bottom: 1.5rem;">Student Information</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">First Name *</label>
+              <input type="text" name="firstName" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Last Name *</label>
+              <input type="text" name="lastName" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Date of Birth *</label>
+              <input type="date" name="dateOfBirth" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Grade Applying For *</label>
+              <select name="gradeApplying" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+                <option value="">Select Grade</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+              </select>
+            </div>
+          </div>
+          
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">South African ID Number *</label>
+            <input type="text" name="idNumber" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+          <h3 style="color: #003A70; margin-bottom: 1.5rem;">Contact Information</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address *</label>
+              <input type="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number *</label>
+              <input type="tel" name="phone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+          </div>
+          
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Home Address *</label>
+            <textarea name="address" required rows="3" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; resize: vertical;"></textarea>
+          </div>
+        </div>
+
+        <!-- Parent/Guardian Information -->
+        <div style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+          <h3 style="color: #003A70; margin-bottom: 1.5rem;">Parent/Guardian Information</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Parent/Guardian Full Name *</label>
+              <input type="text" name="parentName" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Relationship *</label>
+              <select name="parentRelationship" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+                <option value="">Select Relationship</option>
+                <option value="mother">Mother</option>
+                <option value="father">Father</option>
+                <option value="guardian">Guardian</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Parent/Guardian Email *</label>
+              <input type="email" name="parentEmail" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+            <div>
+              <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Parent/Guardian Phone *</label>
+              <input type="tel" name="parentPhone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Information -->
+        <div style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+          <h3 style="color: #003A70; margin-bottom: 1.5rem;">Academic Information</h3>
+          <div style="margin-bottom: 1rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Current School</label>
+            <input type="text" name="currentSchool" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+          </div>
+          
+          <div style="margin-bottom: 1rem;">
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Reason for Application *</label>
+            <textarea name="reasonForApplication" required rows="4" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; resize: vertical;"></textarea>
+          </div>
+          
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Extracurricular Activities/Interests</label>
+            <textarea name="extracurricularActivities" rows="3" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; resize: vertical;"></textarea>
+          </div>
+        </div>
+
+        <!-- Documents Upload -->
+        <div style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+          <h3 style="color: #003A70; margin-bottom: 1.5rem;">Required Documents</h3>
+          <p style="margin-bottom: 1rem;">Please prepare the following documents for upload:</p>
+          <ul style="margin-bottom: 1rem; padding-left: 2rem;">
+            <li>Birth Certificate</li>
+            <li>South African ID Document</li>
+            <li>Latest School Report</li>
+            <li>Immunization Certificate</li>
+            <li>Proof of Residence</li>
+          </ul>
+          
+          <div>
+            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Upload Documents</label>
+            <input type="file" name="documents" multiple accept=".pdf,.jpg,.jpeg,.png" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+            <small style="color: #666;">Accepted formats: PDF, JPG, JPEG, PNG (Max 5MB per file)</small>
+          </div>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+          <div style="margin-bottom: 1rem;">
+            <label style="display: flex; align-items: center; gap: 0.5rem;">
+              <input type="checkbox" name="termsAccepted" required>
+              <span>I agree to the <a href="#" target="_blank" style="color: #003A70;">Terms and Conditions</a> and <a href="#" target="_blank" style="color: #003A70;">Privacy Policy</a> *</span>
+            </label>
+          </div>
+          
+          <div>
+            <label style="display: flex; align-items: center; gap: 0.5rem;">
+              <input type="checkbox" name="newsletter">
+              <span>I would like to receive school newsletters and updates</span>
+            </label>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button type="button" class="btn outline" onclick="saveDraft()" style="margin-right: 1rem;">Save Draft</button>
+          <button type="submit" class="btn filled">Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+    </div>
+  </footer>
+
+  <script src="scripts/student-application.js"></script>
+</body>
+</html>

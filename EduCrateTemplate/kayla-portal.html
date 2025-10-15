@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayla Arikanna Portal | EduCrate</title>
+  <link rel="stylesheet" href="styles/kayla-portal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="Hoërskool Noordheuwel Logo">
+      <span>EduCrate</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="academics.html">Academics</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="kayla-profile.html" class="btn outline">Profile</a>
+      <a href="assignments.html" class="btn filled">Assignments</a>
+    </div>
+  </header>
+
+  <main class="portal-main">
+    <!-- Portal Header -->
+    <section class="portal-header">
+      <img src="images/kayla.jpg" alt="Kayla Arikanna" class="profile-pic">
+      <div class="portal-info">
+        <h1>Welcome, Kayla Arikanna</h1>
+        <p class="grade">Grade 10</p>
+        <p class="email">kayla@student.educrate.com</p>
+      </div>
+    </section>
+
+    <!-- Tabs Navigation -->
+    <section class="portal-tabs">
+      <button class="tab-btn active" data-tab="grades">Grades</button>
+      <button class="tab-btn" data-tab="assignments">Assignments</button>
+      <button class="tab-btn" data-tab="exams">Exams & Quizzes</button>
+      <button class="tab-btn" data-tab="syllabus">Syllabus</button>
+      <button class="tab-btn" data-tab="messages">Messages</button>
+    </section>
+
+    <!-- Tab Contents -->
+    <section class="tab-content" id="grades">
+      <h2>Current Grades</h2>
+      <div class="progress-cards">
+        <div class="progress-card">
+          <h3>Mathematics</h3>
+          <div class="progress-bar"><div class="progress-bar-fill" data-grade="78"></div></div>
+          <p class="progress-comments">Strong analytical skills; needs to practice problem-solving more.</p>
+        </div>
+        <div class="progress-card">
+          <h3>Afrikaans</h3>
+          <div class="progress-bar"><div class="progress-bar-fill" data-grade="85"></div></div>
+          <p class="progress-comments">Excellent grasp of language and grammar.</p>
+        </div>
+        <div class="progress-card">
+          <h3>Life Sciences</h3>
+          <div class="progress-bar"><div class="progress-bar-fill" data-grade="80"></div></div>
+          <p class="progress-comments">Shows great curiosity and understanding of biological concepts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content" id="assignments">
+      <h2>Assignments</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>Mathematics - Algebra Worksheet</h3>
+          <p>Due: 05 Sep 2025</p>
+          <p>Status: <strong>Pending</strong></p>
+        </div>
+        <div class="card">
+          <h3>Afrikaans - Essay on Cultural Heritage</h3>
+          <p>Due: 08 Sep 2025</p>
+          <p>Status: <strong>Submitted</strong></p>
+        </div>
+        <div class="card">
+          <h3>Life Sciences - Plant Cell Report</h3>
+          <p>Due: 12 Sep 2025</p>
+          <p>Status: <strong>Pending</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content" id="exams">
+      <h2>Exams & Quizzes</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>Mathematics Quiz 1</h3>
+          <p>Date: 10 Sep 2025</p>
+          <p>Status: <strong>Upcoming</strong></p>
+        </div>
+        <div class="card">
+          <h3>Afrikaans Midterm Exam</h3>
+          <p>Date: 15 Sep 2025</p>
+          <p>Status: <strong>Upcoming</strong></p>
+        </div>
+        <div class="card">
+          <h3>Life Sciences Quiz 2</h3>
+          <p>Date: 18 Sep 2025</p>
+          <p>Status: <strong>Upcoming</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content" id="syllabus">
+      <h2>Class Syllabus</h2>
+      <ul class="syllabus-list">
+        <li><strong>Mathematics:</strong> Algebra, Geometry, Probability</li>
+        <li><strong>Afrikaans:</strong> Grammar, Literature, Composition</li>
+        <li><strong>Life Sciences:</strong> Cells, Plant Biology, Human Anatomy</li>
+        <li><strong>History:</strong> South African History, World History</li>
+        <li><strong>Physical Education:</strong> Fitness, Team Sports</li>
+      </ul>
+    </section>
+
+    <section class="tab-content" id="messages">
+      <h2>Messages from Teachers</h2>
+      <div class="card-list">
+        <div class="card">
+          <p><strong>Mr. Johan van der Merwe:</strong> Kayla, your leadership skills are improving. Keep up the good work!</p>
+        </div>
+        <div class="card">
+          <p><strong>Ms. Elsie Botha:</strong> Reminder: Submit your Afrikaans essay by next week.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hoërskool Noordheuwel | Powered by EduCrate</p>
+  </footer>
+
+  <script src="scripts/kayla-portal.js"></script>
+</body>
+</html>

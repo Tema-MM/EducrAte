@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fbff;
+  color: #002147;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #002147;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logo img { height: 42px; border-radius: 8px; }
+
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: white; font-weight: 600; position: relative; padding: 6px 0; }
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #FFCC00;
+  border-radius: 2px;
+}
+
+.assignments-main { max-width: 920px; margin: 3rem auto; padding: 0 1.5rem; }
+.assignments-main h1 { font-size: 2.5rem; font-weight: 900; margin-bottom: 2rem; color: #002147; }
+
+.assignments-list { display: flex; flex-wrap: wrap; gap: 1.8rem; }
+
+.assignment-card {
+  flex: 1 1 300px;
+  background: white;
+  border-radius: 18px;
+  padding: 1.8rem 2.2rem;
+  box-shadow: 0 6px 22px rgba(0,33,71,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0,33,71,0.15);
+}
+
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
+.card-header h2 { font-weight: 800; font-size: 1.3rem; color: #002147; }
+.status { padding: 4px 12px; border-radius: 12px; font-weight: 700; font-size: 0.85rem; color: white; }
+.status.pending { background: #FFCC00; color: #002147; }
+.status.submitted { background: #28a745; }
+.status.overdue { background: #dc3545; }
+
+.due-date { font-size: 0.95rem; color: #444; margin-bottom: 0.5rem; }
+.assignment-desc { font-size: 1rem; color: #003060; margin-bottom: 1.2rem; }
+
+.btn.filled {
+  background-color: #002147;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn.filled:hover { background-color: #01498c; }
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-weight: 600;
+  background-color: #002147;
+  color: white;
+  margin-top: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .assignments-list { flex-direction: column; }
+}

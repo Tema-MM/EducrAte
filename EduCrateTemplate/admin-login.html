@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Login | EduCrate</title>
+  <link rel="stylesheet" href="styles/student-login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <section class="login-hero">
+    <div class="overlay"></div>
+    <div class="login-container">
+      <h1>Admin Portal</h1>
+      <p class="subtitle">Login to access the administration panel</p>
+      <nav class="account-toggle" aria-label="Account type">
+        <a class="tab" href="student-login.html">Students</a>
+        <a class="tab active" aria-current="page" href="admin-login.html">Admins</a>
+      </nav>
+      <form id="adminLoginForm" novalidate>
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit" class="btn filled">Login</button>
+      </form>
+      <p class="back-link"><a href="index.html">← Back to Home</a></p>
+    </div>
+  </section>
+
+  <script src="scripts/admin-login.js"></script>
+</body>
+</html>
